@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科幻风个人网站</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 粒子背景画布 -->
+    <canvas id="particleCanvas"></canvas>
+    
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-text">TECH</span>
+            <span class="logo-accent">.FUTURE</span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link">首页</a></li>
+            <li><a href="#about" class="nav-link">简介</a></li>
+            <li><a href="#skills" class="nav-link">技能</a></li>
+            <li><a href="#projects" class="nav-link">项目</a></li>
+            <li><a href="#contact" class="nav-link">联系</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- 首页英雄区 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="glitch-text" data-text="未来已来">未来已来</span>
+            </h1>
+            <p class="hero-subtitle">开发者 · 设计师 · 创新者</p>
+            <p class="hero-description">探索科技边界，创造数字奇迹</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary">了解更多</a>
+                <a href="#contact" class="btn btn-secondary">联系我</a>
+            </div>
+        </div>
+        <div class="hero-decoration"></div>
+    </section>
+
+    <!-- 个人简介区 -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-accent">01</span>
+                <span class="title-text">关于我</span>
+            </h2>
+            <div class="about-grid">
+                <div class="about-card card-glow">
+                    <div class="card-header">
+                        <div class="card-icon">💻</div>
+                        <h3>技术开发</h3>
+                    </div>
+                    <p>热衷于探索前沿技术，专注于Web开发与用户体验设计。始终以创新思维解决问题，追求代码的优雅与高效。</p>
+                </div>
+                <div class="about-card card-glow">
+                    <div class="card-header">
+                        <div class="card-icon">🚀</div>
+                        <h3>创新思维</h3>
+                    </div>
+                    <p>善于将抽象概念转化为具体方案，通过跨界思维激发创意火花。始终保持学习热情，拥抱技术变革。</p>
+                </div>
+                <div class="about-card card-glow">
+                    <div class="card-header">
+                        <div class="card-icon">🎯</div>
+                        <h3>目标导向</h3>
+                    </div>
+                    <p>以用户需求为核心，以技术实现为手段，致力于打造既美观又实用的数字产品。注重细节，追求卓越。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能展示区 -->
+    <section id="skills" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-accent">02</span>
+                <span class="title-text">技能专长</span>
+            </h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-bar">
+                        <span class="skill-name">HTML/CSS</span>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-bar">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-bar">
+                        <span class="skill-name">React/Vue</span>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-bar">
+                        <span class="skill-name">Node.js</span>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-bar">
+                        <span class="skill-name">UI/UX设计</span>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-bar">
+                        <span class="skill-name">响应式设计</span>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目展示区 -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-accent">03</span>
+                <span class="title-text">精选项目</span>
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">数据可视化平台</h3>
+                        <p class="project-description">基于Web的数据分析与可视化系统，支持实时数据展示与交互式图表</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">智能任务管理系统</h3>
+                        <p class="project-description">高效的个人任务管理工具，支持分类、标签、提醒等丰富功能</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">LocalStorage</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">创意动画展示页</h3>
+                        <p class="project-description">展示前沿Web动画技术，包含多种交互式动画效果</p>
+                        <div class="project-tags">
+                            <span class="tag">CSS3</span>
+                            <span class="tag">Canvas</span>
+                            <span class="tag">SVG</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式区 -->
+    <section id="contact" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-accent">04</span>
+                <span class="title-text">联系方式</span>
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-text">
+                            <h4>邮箱</h4>
+                            <p>example@email.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-text">
+                            <h4>电话</h4>
+                            <p>+86 138 8888 8888</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-text">
+                            <h4>地址</h4>
+                            <p>中国 · 科技创新园</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Dribbble</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 个人网站 · 使用科技创造未来</p>
+            <div class="footer-decorations"></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
